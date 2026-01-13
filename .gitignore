@@ -1,0 +1,22 @@
+
+# Visual Studio / VS Code
+.vs/
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual env
+venv/
+
+# Streamlit
+.streamlit/
+
+# Data
+data/
+tmp/
+
+# Secrets
+.env
