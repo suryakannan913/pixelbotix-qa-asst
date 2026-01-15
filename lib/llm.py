@@ -1,7 +1,11 @@
 from google import genai
-from google.genai import types
+from google.genai import types 
+import os
 
-client = genai.Client(api_key="AIzaSyBaGbU1dlnYj2-liMvpUQDvLSzEkNXAlXc")
+from dotenv import load_dotenv
+load_dotenv()
+
+client = genai.Client(api_key=os.environ["GOOGLE_API_KEY"])
 
 def generate_answer(prompt: str):
     """

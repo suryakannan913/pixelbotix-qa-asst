@@ -1,7 +1,11 @@
 from google import genai
 import numpy as np
+import os
 
-client = genai.Client(api_key="AIzaSyBaGbU1dlnYj2-liMvpUQDvLSzEkNXAlXc")
+from dotenv import load_dotenv
+load_dotenv()
+
+client = genai.Client(api_key=os.environ["GOOGLE_API_KEY"])
 
 def embed_texts(chunks):
     """
