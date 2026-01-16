@@ -3,7 +3,7 @@ from ingest import ingest_pdf
 from chat import answer_question
 
 # Set the PDF path
-pdf_filename = "PixelbotixCollegeLab.pdf"  # EXACT file name
+pdf_filename = "dmv.pdf"  # EXACT file name
 pdf_path = os.path.join("docs", pdf_filename)  # Windows-safe path
 
 if not os.path.exists(pdf_path):

@@ -23,7 +23,7 @@ def load_index(index_path, meta_path):
     return index, metadata
 
 
-def search(index, query_embedding, k=4):
+def search(index, query_embedding, k=10):
     vector = np.array([query_embedding]).astype("float32")
     _, indices = index.search(vector, k)
     return indices[0]
